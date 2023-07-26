@@ -30,6 +30,13 @@ library(gmodels)
 
 CrossTable(result1$category, result1$rating)
 chisq.test(result1$category, result1$rating)
+## 결과
+# # > chisq.test(result2$category, result2$rating)
+# 
+# # Pearson's Chi-squared test
+# #
+# # data:  result2$category and result2$rating
+# # # X-squared = 29.981, df = 16, p-value = 0.0181
 
 ###################################################
 ###               <2. 전략분야 카이제곱 분석>         ####
@@ -55,3 +62,14 @@ library(gmodels)
 CrossTable(result2$category, result2$rating)
 chisq.test(result2$category, result2$rating)
 
+## 결과
+# > chisq.test(result2$category, result2$rating)
+# 
+# Pearson's Chi-squared test
+# 
+# data:  result2$category and result2$rating
+# X-squared = 8.835, df = 20, p-value = 0.9847
+# 
+# Warning message:
+# In chisq.test(result2$category, result2$rating) :
+#   카이제곱 approximation은 정확하지 않을수도 있습니다
